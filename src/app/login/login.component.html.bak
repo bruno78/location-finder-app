@@ -1,0 +1,29 @@
+<md-card-content layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="login-form">
+      <md-card flex="flex" flex-gt-sm="50" flex-gt-md="33">
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2><span>Login Form</span></h2>
+          </div>
+        </md-toolbar>
+        <md-card-content>
+          <form name="Form">
+            <md-input-container class="md-block">
+              <label>Login</label>
+              <input type="text" name="email" placeholder="login" required=""/>
+              <div role="alert" multiple="">
+                <div class="my-message">Please enter your email.</div>
+              </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+              <label>Password</label>
+              <input type="password" name="password" placeholder="password" required="" md-maxlength="16"/>
+              <div role="alert" multiple="">
+                <div class="my-message">Please enter your password.</div>
+                <div class="my-message">Too long.</div>
+              </div>
+            </md-input-container>
+            <button md-button color="primary">Login</button>
+          </form>
+        </md-card-content>
+      </md-card>
+    </md-card-content>

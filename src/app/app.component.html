@@ -1,32 +1,3 @@
 <!--The whole content below can be removed with the new code.-->
 <md-toolbar color="primary">{{ title }}</md-toolbar>
-<md-card class="example-card">
-  <img md-card-image src="assets/img/shiba2.jpg">
-  <md-card-header>
-    <!--div md-card-avatar class="example-header-image"></div-->
-    <md-card-title>Space: {{ eventSpace.name }} Capacity: {{ eventSpace.capacity }} people
-    </md-card-title>
-    <md-card-subtitle>Location: {{ eventSpace.location }} </md-card-subtitle>
-  </md-card-header>
-  <md-card-content>
-    <div *ngIf="eventSpace.recording_capabilities">
-      Recording Capabilities: Yes
-    </div>
-    <div *ngIf="!eventSpace.recording_capabilities">
-      Recording Capabilities: No
-    </div>
-    <div *ngIf="eventSpace.breakout_room">
-      Breakout room: Yes
-    </div>
-    <div *ngIf="!eventSpace.breakout_room">
-      Breakout room: No
-    </div>
-    Floor: {{eventSpace.floor}}
-    Contact: Fulana de tal
-    Email:   fulana@detal.com
-    Phone: 345-345-3223
-  </md-card-content>
-  <md-card-actions>
-    <button md-button>Edit</button>
-  </md-card-actions>
-</md-card>
+<app-eventSpace></app-eventSapce>
